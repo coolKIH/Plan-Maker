@@ -56,10 +56,10 @@ end
 
 
 def showAll
-  puts 'There are totally ' + $planFileObj.getPlanSize.to_s + ' items of plans'
+  puts 'There are totalling ' + $planFileObj.getPlanSize.to_s + ' items of plans'
   $planFileObj.keys.each do |createdDate|
     puts
-    puts 'Your Plans Created on ' + createdDate
+    puts 'Your Plans for ' + createdDate
     numOfPlans = 0
     plans = $planFileObj[createdDate]
     plans.each do |plan|
